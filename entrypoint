@@ -1,0 +1,6 @@
+#!/bin/sh
+
+CLEANED_PDF=$(mktemp)
+exiftool -all= - > $CLEANED_PDF
+qpdf --linearize --replace-input $CLEANED_PDF
+cat $CLEANED_PDF
