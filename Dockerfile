@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.17
 LABEL maintainer="https://github.com/parry84/"
 
 ENV EXIFTOOL_VERSION=12.60
